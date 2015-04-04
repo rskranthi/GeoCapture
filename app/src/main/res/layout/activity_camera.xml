@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kranthi.com.geocapture.cameraActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mainImageView"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/background4"
+        android:layout_alignParentBottom="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView6"
+        android:src="@drawable/gpsicon"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/gpsTextView"
+        android:layout_toLeftOf="@+id/gpsTextView"
+        android:layout_toStartOf="@+id/gpsTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="city"
+        android:id="@+id/cityTextView"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffc0253d"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="gps"
+        android:id="@+id/gpsTextView"
+        android:layout_below="@+id/cityTextView"
+        android:layout_alignLeft="@+id/cityTextView"
+        android:layout_alignStart="@+id/cityTextView"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffffff" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:id="@+id/cameraBtn"
+        android:alpha="1"
+        android:background="#00ffffff"
+        android:src="@drawable/cameraiconnew3"
+        android:scaleType="fitXY"
+        android:onClick="takephotoOnClick"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

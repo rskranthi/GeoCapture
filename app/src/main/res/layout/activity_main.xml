@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mainbackground1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="173dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/background4"
+            android:onClick="onCameraClick"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:id="@+id/mainActivityCameraBtn"
+            android:alpha="1"
+            android:background="#00ffffff"
+            android:src="@drawable/cameraiconnew3"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onCameraClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Camera"
+            android:id="@+id/cameratv"
+            android:textColor="#ffffffff"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_toLeftOf="@+id/mainActivityCameraBtn"
+            android:layout_toStartOf="@+id/mainActivityCameraBtn"
+            android:layout_marginRight="71dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginTop="34dp"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/background4"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="onGalleryClick" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageButton3"
+            android:alpha="1"
+            android:background="#00ffffff"
+            android:src="@drawable/foldericon"
+            android:scaleType="fitXY"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onGalleryClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Gallery"
+            android:id="@+id/gallerytv"
+            android:textColor="#ffffffff"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/cameratv"
+            android:layout_alignStart="@+id/cameratv" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/geocaptureicon"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
